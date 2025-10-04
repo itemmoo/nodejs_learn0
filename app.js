@@ -15,7 +15,6 @@ const apiRoutes = require('./src/routes/api');
 app.use(morgan('combined'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "/public/saaspal-free-lite/")));
 
 // View engine setup
 app.set('view engine', 'ejs');
