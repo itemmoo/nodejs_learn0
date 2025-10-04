@@ -1,0 +1,25 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Light gray background */
+        }
+        /* Custom scrollbar for better look in the cart */
+        .cart-scroll {
+            max-height: 70vh;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #4f46e5 #e0e7ff;
+        }
+        .cart-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .cart-scroll::-webkit-scrollbar-thumb {
+            background-color: #4f46e5;
+            border-radius: 20px;
+        }
+        .cart-scroll::-webkit-scrollbar-track {
+            background: #e0e7ff;
+        }
+        /* Ensure the modal is fixed over everything */
+        .cart-modal, .alert-box {
+            z-index: 50; /* Tailwind z-50 */
+        }
