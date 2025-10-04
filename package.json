@@ -1,21 +1,31 @@
 {
   "name": "ep4",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "description": "Node.js Express app with EJS templates",
+  "main": "src/app.js",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "express",
+    "ejs",
+    "nodejs",
+    "render"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
     "debug": "^4.4.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   },
   "nodemonConfig": {
     "ignore": [
